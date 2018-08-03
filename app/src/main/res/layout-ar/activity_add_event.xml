@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Spinner
+        android:id="@+id/eventTypeSpinner_AddEventActivity"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/placeET_addEventActivity"
+         />
+
+    <EditText
+        android:id="@+id/eventET_addActivity"
+        android:layout_width="340dp"
+        android:layout_height="150dp"
+        android:ems="10"
+        android:hint="اكتب المناسبة"
+        android:inputType="textMultiLine"
+        android:layout_below="@+id/eventTypeSpinner_AddEventActivity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp" />
+
+    <EditText
+        android:id="@+id/familyET_addEventActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint=" اسم العائله"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/eventET_addActivity"
+        android:layout_alignRight="@+id/eventTypeSpinner_AddEventActivity"
+
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:id="@+id/placeET_addEventActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="مكان المناسبة"
+        android:inputType="textPersonName"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/familyET_addEventActivity"
+        android:layout_alignLeft="@+id/eventET_addActivity"
+         />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:text="نوع المناسبه"
+        android:layout_above="@+id/eventET_addActivity"
+        android:layout_alignRight="@+id/eventET_addActivity"
+         />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="عائلة"
+        android:textSize="24sp"
+        android:layout_alignTop="@+id/familyET_addEventActivity"
+        android:layout_alignRight="@+id/eventET_addActivity"
+       />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="مكان المناسبه"
+        android:layout_above="@+id/eventTime_Et"
+        android:layout_alignRight="@+id/textView3"
+         />
+
+    <EditText
+        android:id="@+id/eventTime_Et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="51dp"
+        android:ems="10"
+        android:hint="معاد المناسبه"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/placeET_addEventActivity"
+        android:layout_alignLeft="@+id/placeET_addEventActivity"
+        android:layout_alignStart="@+id/placeET_addEventActivity" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="معاد المناسبه"
+        android:layout_alignBaseline="@+id/eventTime_Et"
+        android:layout_alignBottom="@+id/eventTime_Et"
+        android:layout_alignLeft="@+id/textView5"
+         />
+
+</RelativeLayout>

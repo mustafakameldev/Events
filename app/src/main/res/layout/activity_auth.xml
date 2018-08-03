@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mostafakamel.events.AuthActivity">
+
+
+    <EditText
+        android:id="@+id/emailEt_AuthActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="الايميل "
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="136dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/passwordEt_AtuhActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="الباسورد"
+        android:inputType="textPassword"
+        android:layout_marginTop="64dp"
+        android:layout_below="@+id/emailEt_AuthActivity"
+        android:layout_alignLeft="@+id/emailEt_AuthActivity"
+        android:layout_alignStart="@+id/emailEt_AuthActivity" />
+
+    <Button
+        android:id="@+id/signInBtn_AuthActivty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordEt_AtuhActivity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:text="دخول" />
+</RelativeLayout>
